@@ -1,1 +1,403 @@
-<h1>Hello World</h1>
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Hazırlanıyor - Buğra Özdemir</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.8s ease;
+            overflow: hidden;
+        }
+
+        .greeting-container {
+            text-align: center;
+            padding: 50px 40px;
+            border-radius: 25px;
+            backdrop-filter: blur(15px);
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            animation: fadeIn 1.5s ease-in-out;
+            max-width: 700px;
+            position: relative;
+            overflow: hidden;
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        .greeting-container::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+            animation: shimmer 4s infinite;
+            pointer-events: none;
+        }
+
+        .main-title {
+            font-size: 3.5rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 15px rgba(0, 0, 0, 0.4);
+            letter-spacing: 3px;
+            background: linear-gradient(45deg, #ff6b6b, #4ecdc4, #45b7d1, #96ceb4);
+            background-size: 300% 300%;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            animation: gradientShift 3s ease-in-out infinite;
+        }
+
+        .coming-soon-text {
+            font-size: 1.8rem;
+            font-weight: 300;
+            margin-bottom: 30px;
+            text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.3);
+            opacity: 0.9;
+        }
+
+        .description {
+            font-size: 1.1rem;
+            margin-bottom: 40px;
+            line-height: 1.6;
+            opacity: 0.8;
+            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        .progress-container {
+            width: 100%;
+            height: 8px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+            margin: 30px 0;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .progress-bar {
+            height: 100%;
+            background: linear-gradient(90deg, #ff6b6b, #4ecdc4, #45b7d1);
+            border-radius: 10px;
+            animation: progressAnimation 3s ease-in-out infinite;
+            position: relative;
+        }
+
+        .progress-bar::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+            animation: progressShine 2s linear infinite;
+        }
+
+        .contact-info {
+            margin-top: 40px;
+            padding: 25px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .contact-title {
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+
+        .contact-item {
+            margin: 10px 0;
+            font-size: 1rem;
+            opacity: 0.9;
+        }
+
+        .email-link {
+            color: inherit;
+            text-decoration: none;
+            padding: 8px 15px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 20px;
+            transition: all 0.3s ease;
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+        .email-link:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .icon {
+            font-size: 5rem;
+            margin-bottom: 30px;
+            animation: float 3s ease-in-out infinite;
+            filter: drop-shadow(0 5px 15px rgba(0, 0, 0, 0.3));
+        }
+
+        /* Modern Gradient Background */
+        body {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 25%, #f093fb 50%, #f5576c 75%, #4facfe 100%);
+            background-size: 400% 400%;
+            animation: gradientAnimation 15s ease infinite;
+            color: white;
+        }
+
+        .greeting-container {
+            background: rgba(255, 255, 255, 0.15);
+            border: 1px solid rgba(255, 255, 255, 0.25);
+        }
+
+        @keyframes gradientAnimation {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        @keyframes gradientShift {
+            0%, 100% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+        }
+
+        @keyframes progressAnimation {
+            0% {
+                width: 0%;
+            }
+            50% {
+                width: 75%;
+            }
+            100% {
+                width: 85%;
+            }
+        }
+
+        @keyframes progressShine {
+            0% {
+                transform: translateX(-100%);
+            }
+            100% {
+                transform: translateX(200%);
+            }
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.05);
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0px);
+            }
+            50% {
+                transform: translateY(-25px);
+            }
+        }
+
+        @keyframes shimmer {
+            0% {
+                transform: translateX(-100%) translateY(-100%) rotate(45deg);
+            }
+            100% {
+                transform: translateX(100%) translateY(100%) rotate(45deg);
+            }
+        }
+
+        .particles {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            overflow: hidden;
+        }
+
+        .particle {
+            position: absolute;
+            width: 4px;
+            height: 4px;
+            background: rgba(255, 255, 255, 0.5);
+            border-radius: 50%;
+            animation: fall linear infinite;
+        }
+
+        @keyframes fall {
+            0% {
+                transform: translateY(-100vh) rotate(0deg);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(100vh) rotate(360deg);
+                opacity: 0;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .main-title {
+                font-size: 2.5rem;
+                letter-spacing: 2px;
+            }
+            .coming-soon-text {
+                font-size: 1.4rem;
+            }
+            .description {
+                font-size: 1rem;
+            }
+            .icon {
+                font-size: 4rem;
+            }
+            .greeting-container {
+                padding: 40px 25px;
+                margin: 20px;
+            }
+            .contact-info {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="particles" id="particles"></div>
+    
+    <div class="greeting-container">
+        <div class="icon" id="constructionIcon">🚧</div>
+        <div class="main-title">Site Hazırlanıyor</div>
+        <div class="coming-soon-text">Çok Yakında!</div>
+        <div class="description">
+            Yeni ve modern web sitemizi hazırlıyoruz. Size en iyi deneyimi sunabilmek için 
+            elimizden geleni yapıyoruz. Çok yakında harika bir site ile karşınızda olacağız!
+        </div>
+        
+        <div class="progress-container">
+            <div class="progress-bar"></div>
+        </div>
+        <div style="text-align: center; opacity: 0.8; margin-top: 10px;">%85 Tamamlandı</div>
+        
+        <div class="contact-info">
+            <div class="contact-title">🤝 İletişim</div>
+            <div class="contact-item">📧 Sorularınız için bize ulaşın</div>
+            <a href="mailto:bugraozdemir3458@gmail.com" class="email-link">
+                ✉️ E-posta Gönder
+            </a>
+            <div class="contact-item" style="margin-top: 20px;">
+                🔔 Hazır olduğunda size haber verelim!
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function updateConstructionIcon() {
+            const icons = ['🚧', '⚙️', '🔨', '🛠️', '⚡', '🎯'];
+            const iconElement = document.getElementById('constructionIcon');
+            let currentIconIndex = 0;
+            
+            setInterval(() => {
+                currentIconIndex = (currentIconIndex + 1) % icons.length;
+                iconElement.textContent = icons[currentIconIndex];
+            }, 2000);
+        }
+
+        function createParticles() {
+            const particlesContainer = document.getElementById('particles');
+            const particleCount = 60;
+            
+            for (let i = 0; i < particleCount; i++) {
+                const particle = document.createElement('div');
+                particle.className = 'particle';
+                particle.style.left = Math.random() * 100 + '%';
+                particle.style.animationDuration = (Math.random() * 4 + 3) + 's';
+                particle.style.animationDelay = Math.random() * 3 + 's';
+                
+                // Farklı boyutlarda parçacıklar
+                const size = Math.random() * 4 + 2;
+                particle.style.width = size + 'px';
+                particle.style.height = size + 'px';
+                
+                // Farklı opaklıkta parçacıklar
+                particle.style.opacity = Math.random() * 0.5 + 0.3;
+                
+                particlesContainer.appendChild(particle);
+            }
+        }
+
+        function animateProgressBar() {
+            const progressBar = document.querySelector('.progress-bar');
+            let width = 0;
+            const targetWidth = 85;
+            
+            const interval = setInterval(() => {
+                if (width >= targetWidth) {
+                    clearInterval(interval);
+                } else {
+                    width += Math.random() * 2 + 0.5;
+                    if (width > targetWidth) width = targetWidth;
+                    progressBar.style.width = width + '%';
+                }
+            }, 50);
+        }
+
+        // Sayfa yüklendiğinde çalışacak fonksiyonlar
+        document.addEventListener('DOMContentLoaded', () => {
+            updateConstructionIcon();
+            createParticles();
+            
+            // Progress bar animasyonunu 1 saniye sonra başlat
+            setTimeout(animateProgressBar, 1000);
+        });
+
+        // E-posta linkine hover efekti için ek JavaScript
+        document.addEventListener('DOMContentLoaded', () => {
+            const emailLink = document.querySelector('.email-link');
+            
+            emailLink.addEventListener('mouseenter', () => {
+                emailLink.style.animation = 'pulse 0.6s ease-in-out';
+            });
+            
+            emailLink.addEventListener('mouseleave', () => {
+                emailLink.style.animation = '';
+            });
+        });
+    </script>
+</body>
+</html>
