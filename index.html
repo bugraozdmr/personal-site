@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buğra Özdemir - Kişisel Web Sitesi</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">Buğra Özdemir</a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Ana Sayfa</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">Hakkımda</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link">Yetenekler</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">Projeler</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">İletişim</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Merhaba, Ben <span class="highlight">Buğra</span></h1>
+                    <h2>Yazılım Geliştirici & Teknoloji Tutkunu</h2>
+                    <p class="hero-description">
+                        Modern teknolojiler kullanarak yaratıcı çözümler geliştiriyorum. 
+                        Kullanıcı deneyimini önceleyen, performanslı ve estetik projeler üretmeyi seviyorum.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">Projelerimi Gör</a>
+                        <a href="#contact" class="btn btn-secondary">İletişime Geç</a>
+                    </div>
+                    <div class="hero-social">
+                        <a target="_blank" href="https://github.com/bugraozdmr" class="social-link"><i class="fab fa-github"></i></a>
+                        <a target="_blank" href="https://www.linkedin.com/in/bu%C4%9Fra-%C3%B6zdemir-a500b9247/" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a 
+                        href="mailto:bugra3458@gmail.com" class="social-link"><i class="fa fa-envelope"></i></a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="image-container">
+                        <img src="image.jpeg" alt="Buğra" class="profile-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>Hakkımda</h2>
+                <p>Teknoloji dünyasındaki serüvenim ve hedeflerim</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="about-item">
+                        <h3>🎯 Misyonum</h3>
+                        <p>
+                            Teknolojinin gücünü kullanarak insanların hayatını kolaylaştıran, 
+                            değer katan ürünler geliştirmek. Her projede kullanıcı deneyimini 
+                            en üst seviyede tutmaya odaklanıyorum.
+                        </p>
+                    </div>
+                    <div class="about-item">
+                        <h3>💡 Yaklaşımım</h3>
+                        <p>
+                            Sürekli öğrenme, yaratıcı problem çözme ve takım çalışması 
+                            ilkelerine dayanarak projeler geliştiriyorum. Modern teknolojileri 
+                            takip ediyor, en iyi uygulamaları projelerime entegre ediyorum.
+                        </p>
+                    </div>
+                    <div class="about-item">
+                        <h3>🚀 Gelecek Planlarım</h3>
+                        <p>
+                            Yapay zeka ve makine öğrenmesi alanlarında kendimi geliştirerek, 
+                            bu teknolojileri projelerime entegre etmeyi hedefliyorum. 
+                            Açık kaynak projelere katkıda bulunmak da önceliklerim arasında.
+                        </p>
+                    </div>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">2+</div>
+                        <div class="stat-label">Yıl Deneyim</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">15+</div>
+                        <div class="stat-label">Proje</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">10+</div>
+                        <div class="stat-label">Teknoloji</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">100%</div>
+                        <div class="stat-label">Motivasyon</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2>Yeteneklerim</h2>
+                <p>Kullandığım teknolojiler ve araçlar</p>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3><i class="fas fa-code"></i> Frontend</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">HTML5</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">CSS3</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">JavaScript</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">React</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Laravel</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Flutter</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 75%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3><i class="fas fa-server"></i> Backend</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">Node.js</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 70%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Python</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Next</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 70%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Laravel</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Spring</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 60%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">GO</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">ASP Web API</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 95%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3><i class="fas fa-tools"></i> Araçlar</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">Git</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">VS Code</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Docker</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Kubernetes</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 50%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Postman</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Linux</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 95%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2>Projelerim</h2>
+                <p>Geliştirdiğim bazı projeler ve çalışmalar</p>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/netsentinel.png" alt="Sunucu Monitoring Projesi">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <!--<a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>-->
+                                <a href="https://github.com/bugraozdmr/NetSentinel" class="project-link"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>NetSentinel</h3>
+                        <p>Modern bir sunucu durumu izleme uygulaması. Sunucu düştüğünde otomatik bildirimleri hem telegram hemde site içi gönderir .</p>
+                        <div class="project-tags">
+                            <span class="tag">PHP</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">Mysql</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/gtodo.jpeg" alt="Yapılcaklar Projesi">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <!--<a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>-->
+                                <a href="https://github.com/bugraozdmr/GtodO" class="project-link"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>GtodO</h3>
+                        <p>Takım çalışması için geliştirilmiş görev yönetim sistemi. Real-time güncellemeler ve bildirimler.</p>
+                        <div class="project-tags">
+                            <span class="tag">Go</span>
+                            <span class="tag">Echo</span>
+                            <span class="tag">Gorm</span>
+                            <span class="tag">PostgreSQL</span>
+                            <span class="tag">Docker Compose</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/fanfables.png" alt="Film/Dizi Projesi">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <!--<a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>-->
+                                <a href="https://github.com/bugraozdmr/fanfables" class="project-link"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>fanfables</h3>
+                        <p>Film ve dizileri sonra izlemeye kaydeden ve karakterler ve canlandıranlar hakkında bilgi veren bir site.</p>
+                        <div class="project-tags">
+                            <span class="tag">PHP</span>
+                            <span class="tag">MySQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/arsen.png" alt="Şifre üretici Projesi">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <!--<a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>-->
+                                <a href="https://github.com/bugraozdmr/Arsen" class="project-link"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Arsen</h3>
+                        <p>Kişisel bilgilere göre şifre üreten bir uygulama. Birçok kombinasyon dener ve uygun şifreleri üretir.</p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/tarifdunyası.png" alt="Portfolio Projesi">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <!--<a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>-->
+                                <a target="_blank" href="https://github.com/bugraozdmr/tarif-dunyasi" class="project-link"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Tarif Dünyası</h3>
+                        <p>Tariflerin paylaşıldığı bir platform. Kullanıcılar kendi tariflerini ekleyebilir, diğer tarifleri görüntüleyebilir ve favori tariflerini kaydedebilir.</p>
+                        <div class="project-tags">
+                            <span class="tag">NextJS</span>
+                            <span class="tag">Prisma</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/eshop.jpeg" alt="Ecommerce Projesi">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a target="_blank" href="https://github.com/bugraozdmr/EShopMicroservices" class="project-link"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>EShopMicroservices</h3>
+                        <p>Microservis mimarisi kullanarak geliştirilmiş bir e-ticaret uygulaması.</p>
+                        <div class="project-tags">
+                            <span class="tag">.NET</span>
+                            <span class="tag">Docker</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>İletişim</h2>
+                <p>Benimle iletişime geçin, birlikte çalışalım!</p>
+            </div>
+            <div class="contact-content" style="justify-content: center;
+                    align-items: center;
+                    display: flex
+                ;">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>E-posta</h3>
+                            <p>bugraozdemir3458@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Konum</h3>
+                            <p>İstanbul, Türkiye</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Buğra</h3>
+                    <p>Yazılım Geliştirici & Teknoloji Tutkunu</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Hızlı Linkler</h4>
+                    <ul>
+                        <li><a href="#home">Ana Sayfa</a></li>
+                        <li><a href="#about">Hakkımda</a></li>
+                        <li><a href="#skills">Yetenekler</a></li>
+                        <li><a href="#projects">Projeler</a></li>
+                        <li><a href="#contact">İletişim</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>İletişim</h4>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> bugra@example.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> İstanbul, Türkiye</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>CV'mi İndir</h4>
+                    <a href="Resume.pdf" class="btn btn-outline" download>
+                        <i class="fas fa-download"></i> CV İndir
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Buğra. Tüm hakları saklıdır.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

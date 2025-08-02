@@ -1,0 +1,24 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://bugraozdemir.tech/sitemap.xml
+
+# Disallow certain files
+Disallow: /*.pdf$
+Disallow: /private/
+Disallow: /.git/
+
+# Allow all content for search engines
+Allow: /index.html
+Allow: /style.css
+Allow: /script.js
+Allow: /*.jpeg
+Allow: /*.jpg
+Allow: /*.png
+Allow: /*.gif
+Allow: /*.svg
+
+# Cache directives
+# Allow bots to crawl at a reasonable rate
+Crawl-delay: 1

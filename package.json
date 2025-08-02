@@ -1,0 +1,39 @@
+{
+  "name": "bugra-portfolio",
+  "version": "1.0.0",
+  "description": "Buğra'nın kişisel portfolio web sitesi",
+  "main": "index.html",
+  "scripts": {
+    "start": "python -m http.server 8000",
+    "serve": "python3 -m http.server 8000",
+    "dev": "python -m http.server 3000",
+    "preview": "open index.html",
+    "validate": "echo 'HTML, CSS ve JS dosyaları kontrol ediliyor...'",
+    "build": "echo 'Static site, build işlemi gerekmiyor'",
+    "deploy": "echo 'GitHub Pages otomatik deploy ediyor'"
+  },
+  "keywords": [
+    "portfolio",
+    "personal-website",
+    "developer",
+    "frontend",
+    "responsive",
+    "github-pages"
+  ],
+  "author": "Buğra",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yourusername/personal_site.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/personal_site/issues"
+  },
+  "homepage": "https://yourusername.github.io/personal_site/",
+  "devDependencies": {},
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}
